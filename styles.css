@@ -10,7 +10,7 @@ body {
 header, nav, section, footer {
     padding: 20px;
     margin: 10px;
-    background-color: #fff;
+    background-color: #1e1d1d;
     border: 1px solid #ccc;
 }
 
@@ -90,4 +90,6 @@ th, td {
     padding: 10px;
     text-align: left;
 }
+
+
 
