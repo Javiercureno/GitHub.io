@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const linkedinLink = document.querySelector('a[href="#LinkedIn"]');
     linkedinLink.addEventListener("click", function(event) {
         event.preventDefault();
-        window.open("https://www.linkedin.com/tu-perfil", "_blank");
+        window.open("https://www.linkedin.com/in/javiercureno/", "_blank");
     });
 
     // Puedes añadir más funciones para otros enlaces aquí
