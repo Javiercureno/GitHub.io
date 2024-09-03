@@ -92,4 +92,9 @@ th, td {
 }
 
 
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Opcional: para hacer la imagen circular */
+}
 
