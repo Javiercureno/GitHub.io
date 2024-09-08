@@ -151,19 +151,19 @@ section#about {
 
 .carousel {
     position: relative;
-    width: 100%;
-    max-width: 600px;
+    width: relative;
+    max-width: relative;
     margin: auto;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .carousel-inner {
-    display: flex;
+    display:box;
     transition: transform 0.5s ease-in-out;
 }
 
 .foto-img {
-    flex: 0 0 auto;
+    flex: 10 0 auto;
     width: 100%;
     max-width: 200px; 
     height: auto;
