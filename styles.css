@@ -133,3 +133,19 @@ section#about {
     background-color: #000000;
     text-align: justify;
 }
+
+/* Asegurarse de que las imágenes no se salgan del marco en dispositivos móviles */
+.foto-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+/* Opcional: Añadir estilos adicionales para la sección "fotos" */
+#fotos {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+<link rel="stylesheet" href="styles.css">
