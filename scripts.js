@@ -95,6 +95,6 @@ function moveSlide(direction) {
 
 
     document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
-    
+
 }
 
