@@ -71,3 +71,17 @@ if (enlacesLink && enlacesSection) {
             console.error('El enlace o la sección "About Me" no se encontró en el HTML.');
         }
     });
+
+    //mostrar la seccion fotos
+    const fotosLink = document.querySelector('a[href="#fotos"]');
+    const fotosSection = document.querySelector('#fotos');
+    if (fotosLink && fotosSection) {
+        fotosLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            fotosSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    } else {
+        console.error('El enlace o la sección "fotos" no se encontró en el HTML.');
+    }
+
+    
