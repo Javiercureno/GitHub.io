@@ -62,8 +62,8 @@ aside {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
+    background-color: #0b0000;
+    border: 1px solid #090000;
 }
 
 /* Estilos para la sección principal */
@@ -148,4 +148,3 @@ section#about {
     box-sizing: border-box;
 }
 
-<link rel="stylesheet" href="styles.css">
