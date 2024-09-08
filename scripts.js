@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
     document.addEventListener("DOMContentLoaded", function() {
         // Seleccionar el enlace a la sección de "enlaces"
-        const enlacesLink = document.querySelector('a[href="#Enlaces"]');
+        const EnlacesLink = document.querySelector('a[href="#Enlaces"]');
         // Seleccionar la sección de "enlaces"
-        const enlacesSection = document.querySelector('#Enlaces');
+        const EnlacesSection = document.querySelector('#Enlaces');
         // Añadir el evento click al enlace de "enlaces"
         enlacesLink.addEventListener('click', function() {
             // Mostrar la sección de "enlaces"
-            enlacesSection.scrollIntoView({ behavior: 'smooth' });
+            EnlacesSection.scrollIntoView({ behavior: 'smooth' });
         });
         console.error('El enlace o la sección "enlaces" no se encontró en el HTML.');
         
