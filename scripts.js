@@ -90,7 +90,7 @@ function moveSlide(direction) {
     const slides = document.querySelectorAll('.carousel-inner .foto-img');
     const totalSlides = slides.length;
     currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-    const offset = -currentSlide * 100;
+    const offset = -currentSlide * 1;
     document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
 }
 
