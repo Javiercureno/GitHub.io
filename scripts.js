@@ -46,17 +46,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });});
     
     document.addEventListener("DOMContentLoaded", function() {
-        // Seleccionar el enlace a la sección de "enlaces"
-        const EnlacesLink = document.querySelector('a[href="#Enlaces"]');
-        // Seleccionar la sección de "enlaces"
-        const EnlacesSection = document.querySelector('#Enlaces');
-        // Añadir el evento click al enlace de "enlaces"
-        enlacesLink.addEventListener('click', function() {
-            // Mostrar la sección de "enlaces"
-            EnlacesSection.scrollIntoView({ behavior: 'smooth' });
-        });
-        console.error('El enlace o la sección "enlaces" no se encontró en el HTML.');
-        
+        // Mostrar la sección "Enlaces"
+const enlacesLink = document.querySelector('a[href="#enlaces"]');
+const enlacesSection = document.querySelector('#enlaces');
+if (enlacesLink && enlacesSection) {
+    enlacesLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        enlacesSection.scrollIntoView({ behavior: 'smooth' });
+    });
+} else {
+    console.error('El enlace o la sección "Enlaces" no se encontró en el HTML.');
+}
 
            
         // Mostrar la sección "About Me"
