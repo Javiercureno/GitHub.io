@@ -89,8 +89,21 @@ if (enlacesLink && enlacesSection) {
 function moveSlide(direction) {
     const slides = document.querySelectorAll('.carousel-inner .foto-img');
     const totalSlides = slides.length;
+
+    // Eliminar la clase de animación de la diapositiva actual
+    slides[currentSlide].classList.remove('zoom-in');
+
+    // Calcular la nueva diapositiva actual
     currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
     const offset = -currentSlide * 100;
+
+    // Aplicar la transformación para mover el carrusel
     document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+
+    // Añadir la clase de animación a la nueva diapositiva actual
+    slides[currentSlide].classList.add('zoom-in');
 }
+
+// Inicializar el carrusel cuando el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', initCarousel);
 

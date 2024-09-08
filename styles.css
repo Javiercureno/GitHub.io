@@ -150,15 +150,15 @@ section#about {
 }
 
 .carousel {
-    position: relative;
-    width: relative;
+    position: fixed;
+    width: 100%;
     max-width: relative;
     margin: auto;
     overflow: auto;
 }
 
 .carousel-inner {
-    display:box;
+    display:flex;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -188,4 +188,15 @@ section#about {
 .carousel-button.next {
     right: 10px;
 }
+.foto-img.zoom-in {
+    animation: zoomIn 0.5s ease-in-out;
+}
 
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
