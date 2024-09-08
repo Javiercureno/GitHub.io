@@ -46,28 +46,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });});
     
     document.addEventListener("DOMContentLoaded", function() {
-        // Seleccionar el enlace de LinkedIn
-        const linkedinLink = document.querySelector('a[href="#LinkedIn"]');
-        if (linkedinLink) {
-            linkedinLink.addEventListener("click", function(event) {
-                event.preventDefault();
-                window.open("https://www.linkedin.com/in/javiercureno/", "_blank");
-            });
-        } else {
-            console.error('El enlace de LinkedIn no se encontró en el HTML.');
-        }
-    
-        // Seleccionar el enlace de GitHub
-        const githubLink = document.querySelector('a[href="#GitHub"]');
-        if (githubLink) {
-            githubLink.addEventListener("click", function(event) {
-                event.preventDefault();
-                window.open("https://github.com/Javiercureno", "_blank");
-            });
-        } else {
-            console.error('El enlace de GitHub no se encontró en el HTML.');
-        }
-    
+        // Seleccionar el enlace a la sección de "enlaces"
+        const enlacesLink = document.querySelector('a[href="#Enlaces"]');
+        // Seleccionar la sección de "enlaces"
+        const enlacesSection = document.querySelector('#Enlaces');
+        // Añadir el evento click al enlace de "enlaces"
+        enlacesLink.addEventListener('click', function() {
+            // Mostrar la sección de "enlaces"
+            enlacesSection.scrollIntoView({ behavior: 'smooth' });
+        });
+        console.error('El enlace o la sección "enlaces" no se encontró en el HTML.');
+        
+
+           
         // Mostrar la sección "About Me"
         const aboutLink = document.querySelector('a[href="#about"]');
         const aboutSection = document.querySelector('#about');

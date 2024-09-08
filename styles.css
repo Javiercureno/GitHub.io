@@ -91,5 +91,45 @@ th, td {
     text-align: left;
 }
 
+/* estilos aboutme */
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #000509;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    /*background-color: #f4f7fa ;*/
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(6, 5, 5);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #000305;
+}
+
+section#about {
+    padding: 20px;
+    background-color: #000000;
+    text-align: justify;
+}
