@@ -188,15 +188,4 @@ section#about {
 .carousel-button.next {
     right: 10px;
 }
-.foto-img.zoom-in {
-    animation: zoomIn 0.5s ease-in-out;
-}
 
-@keyframes zoomIn {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
