@@ -84,4 +84,12 @@ if (enlacesLink && enlacesSection) {
         console.error('El enlace o la sección "fotos" no se encontró en el HTML.');
     }
 
-    
+    let currentSlide = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.carousel-inner .foto-img');
+    const totalSlides = slides.length;
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    const offset = -currentSlide * 100;
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+}
